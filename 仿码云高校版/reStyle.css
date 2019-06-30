@@ -1,0 +1,228 @@
+/*全局设置*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{font-size: 12px;}
+body {margin: 0;font-size: 1.5rem;min-width: 500px}
+header,nav,footer{width: 100%;}
+.left{float:left}
+.right{float: right}
+/*头部*/
+header {
+    padding: 0 1%;
+    background-color: #303643;
+    height: 4em;
+    line-height: 4em;
+    position: fixed;
+    overflow: hidden;
+}
+header a{
+    margin: 0 1%;
+    color: #aaa;
+    text-decoration: none;
+}
+header a:hover{color: #ccc}
+header input{
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #303643;
+    color: #cccccc;
+}
+header input:focus{border-color: #fff}
+header img{
+    max-width: 7rem;
+    max-height: 24px;
+    vertical-align: middle;
+}
+.nav-left{
+    float: left;
+    width: 55%;
+}
+.nav-right{
+    float: right;
+    text-align: right;
+    width: 45%;
+}
+.hot{position: relative}
+.hotContent{
+    display: block;
+    background-color: #ff4444;
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    padding: 2px;
+    border-radius: 5px;
+    line-height: normal;
+}
+.active{color: #fff}
+.active:hover{color: #fff}
+
+#help,#top{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-weight: bolder;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top:400px;
+    background-color: #00aa00;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+#top{
+    top: 460px;
+    font-weight: normal;
+    background-color: #cccccc;
+    text-decoration: none;
+    text-align: left;
+    color: #888;
+}
+
+/*尾部*/
+footer{color: #aaa;border-top: 1px solid #aaa}
+footer ul{padding: 0;list-style: none}
+.footer-container{
+    width: 100%;
+    padding: 0 1%;
+}
+.footer-column{
+    width: 15%;
+    float: left;
+}
+.column1{width: 12%}
+.footer-column-lg{width: 38%;}
+.footer-img{width:20%;text-align: right;}
+.footer-img img{width: 8rem;height: 8rem;}
+.footer-img span{padding-right: 1rem}
+.footerBar{
+    clear: both;
+    overflow: hidden;
+    padding: 0 1%;
+    background-color: #333333;
+}
+footer a{
+    text-decoration: none;
+    color: #aaa;
+}
+footer a:hover{
+    color: #666;
+}
+.footer-left{
+    float: left;
+}
+.footer-right{
+    float: right;
+    line-height: 5rem;
+}
+.footerBar img{vertical-align: middle}
+
+/*主内容*/
+.contentHeader{
+    background: slategray url("https://assets.gitee.com/assets/education/banner.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+    padding: 100px 6% 50px 2%;
+    color: #fff;
+}
+.contentHeader .left{width: 50%;text-align: center}
+.contentHeader .right{width: 50%}
+.btn{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #408ab4;
+    width: 20rem;
+    font-weight: bolder;
+    color: #fff;
+}
+.btn:hover{
+    box-shadow: 0px 0px 6px rgba(88,88,255,.5);
+}
+.link{
+    color: #5bc0de;
+    text-decoration: none;
+}
+.link:hover{color: skyblue}
+.video img{max-width:500px;width: 100%}
+
+/*教学场景部分*/
+.teaching{text-align: center;padding: 100px 0}
+.teaching div{
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+}
+.teaching div p{text-align: center}
+.teaching img{
+    max-width: 320px;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+.teaching img:hover{transform: scale(1.1)}
+
+/*fun*/
+.fun{
+    width:100%;
+    background-color: rgba(240,240,240,.5);
+    padding: 50px 0;
+    text-align: center;
+}
+.fun div{
+    display: inline-block;
+    width: 20%;
+    margin-left: 4%;
+    text-align: center;
+    vertical-align: top;
+}
+.fun h4{color: #333}
+.fun p{
+    text-align: center;
+    color: #aaa;
+    font-size: 1.4rem;
+    padding: 0 3rem;
+}
+.fun img{
+    max-width: 180px;
+    width: 100%;
+    box-shadow: none;
+}
+.fun img:hover{transform: none}
+
+/*school*/
+.school{padding: 50px 0}
+.schoolLogo div{
+    display: inline-block;
+    width: 20%;
+    margin: 2%;
+}
+.schoolLogo img{
+    max-width: 280px;
+    width: 100%;
+}
+.school .foot{text-align: center}
+.teaching h1,.fun h1,.school h1{text-align: center;color: #444;}
+
+
+@media screen and (min-width: 0px) and (max-width: 700px){
+    body{font-size: 1rem}
+    header{padding: 0}
+    .hotContent{top:-13px;right: -8px}
+    .footer-img img{width: 6rem;height:6rem}
+    .footer-right{line-height: 3.5rem}
+    .fun p{font-size: 1rem;padding: 0;}
+}
